@@ -1,0 +1,215 @@
+$primary: #fcb616;
+$secondary: #381100;
+$cream: #f9f6f1;
+$white: #fff;
+$light: #efd9d0;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+:root {
+    --burger-color: #fcb616;
+    --fries-color: #e27308;
+    --chicken-color: #8a4d4a;
+    --spag-color: #b04d36;
+    --cake-color: #562721;
+    --ice-cream-color: #3f1f12;
+    --tiramisu-color: #985e53;
+    --pie-color: #b74429;
+}
+
+body {
+    // background: url(../src/images/bg/bg2.jpg);
+    background-color: $secondary;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sora {
+    font-family: Sora;
+    font-weight: 500;
+}
+
+.hover {
+    transition: transform 0.3s;
+}
+
+.hover:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+section {
+    margin-top: 50px;
+}
+
+span {
+    color: $secondary;
+}
+
+.navbar {
+    transition: all 0.6s;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    transition: all 1s;
+    height: 2px;
+    width: 100%;
+    background-color: $light;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.nav-item:hover::after {
+    opacity: 1;
+}
+
+.nav-item:hover:last-child {
+    height: 0;
+}
+
+.spinner-wrapper {
+    background-color: $cream;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+.spinner-grow {
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: $secondary;
+}
+
+p > a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 1px 15px $primary;
+    color: $primary;
+}
+
+.effect > a img:hover {
+    transition: transform 1s ease-in;
+}
+
+.effect > a img:hover {
+    transform: scale(1.2);
+}
+
+.card {
+    background-color: $cream;
+}
+
+.rating-container {
+    font-size: 1.5rem;
+}
+
+div.text-light p  > a{
+    color: $primary;
+}
+
+#home, #main {
+    border-bottom: 1px solid $primary;
+}
+
+#footer {
+    padding-top: 30px;
+}
+
+#menu {
+    padding-top: 30px;
+    background-color: $primary;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+// card backgrounds
+
+.burger {
+    background-color: var(--burger-color);
+}
+
+.burger:hover {
+    box-shadow: 1px 1px 30px var(--burger-color);
+}
+
+.fries {
+    background-color: var(--fries-color);
+}
+
+.fries:hover {
+    box-shadow: 1px 1px 30px var(--fries-color);
+}
+
+.chicken {
+    background-color: var(--chicken-color);
+}
+
+.chicken:hover {
+    box-shadow: 1px 1px 30px var(--chicken-color);
+}
+
+.spaghetti {
+    background-color: var(--spag-color);
+}
+
+.spaghetti:hover {
+    box-shadow: 1px 1px 30px var(--spag-color);
+}
+
+.cake {
+    background-color: var(--cake-color);
+}
+
+.cake:hover {
+    box-shadow: 1px 1px 30px var(--cake-color);
+}
+
+.ice-cream {
+    background-color: var(--ice-cream-color);
+}
+
+.ice-cream:hover {
+    box-shadow: 1px 1px 30px var(--ice-cream-color);
+}
+
+.tiramisu {
+    background-color: var(--tiramisu-color);
+}
+
+.tiramisu:hover {
+    box-shadow: 1px 1px 30px var(--tiramisu-color);
+}
+
+.pie {
+    background-color: var(--pie-color);
+}
+
+.pie:hover {
+    box-shadow: 1px 1px 30px var(--pie-color);
+}
+
+@media only screen and (max-width: 800px) {
+    .mt-6 {
+        margin-top: 60px;
+    }
+}
