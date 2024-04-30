@@ -19,7 +19,6 @@ $light: #efd9d0;
 }
 
 body {
-    // background: url(../src/images/bg/bg2.jpg);
     background-color: $secondary;
     background-position: center;
     background-size: cover;
@@ -38,6 +37,7 @@ body {
 .hover:hover {
     transform: scale(1.15);
     cursor: pointer;
+    z-index: 1;
 }
 
 section {
@@ -99,17 +99,17 @@ a {
     color: $secondary;
 }
 
-p > a:hover {
+p>a:hover {
     text-decoration: underline;
     text-shadow: 1px 1px 15px $primary;
     color: $primary;
 }
 
-.effect > a img:hover {
+.effect>a img:hover {
     transition: transform 1s ease-in;
 }
 
-.effect > a img:hover {
+.effect>a img:hover {
     transform: scale(1.2);
 }
 
@@ -121,11 +121,12 @@ p > a:hover {
     font-size: 1.5rem;
 }
 
-div.text-light p  > a{
+div.text-light p>a {
     color: $primary;
 }
 
-#home, #main {
+#home,
+#main {
     border-bottom: 1px solid $primary;
 }
 
@@ -140,6 +141,10 @@ div.text-light p  > a{
     border-top-right-radius: 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+::placeholder {
+    color: $primary;
 }
 
 // card backgrounds

@@ -11875,6 +11875,7 @@ body {
 .hover:hover {
   transform: scale(1.15);
   cursor: pointer;
+  z-index: 1;
 }
 
 section {
@@ -11962,7 +11963,8 @@ div.text-light p > a {
   color: #fcb616;
 }
 
-#home, #main {
+#home,
+#main {
   border-bottom: 1px solid #fcb616;
 }
 
@@ -11977,6 +11979,10 @@ div.text-light p > a {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+::placeholder {
+  color: #fcb616;
 }
 
 .burger {
