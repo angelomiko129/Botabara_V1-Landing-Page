@@ -1,16 +1,21 @@
 const navScrolled = document.querySelector('.navbar');
 const spinner = document.querySelector('.spinner-wrapper');
 const textLogo = document.querySelector('.text-logo');
+const navLink = document.querySelector('.nav-link');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 61) {
         navScrolled.classList.add('bg-primary');
         textLogo.classList.remove('text-primary');
         textLogo.classList.add('text-secondary');
+        navLink.classList.remove('text-light');
+        navLink.classList.add('text-secondary');
     } else {
         navScrolled.classList.remove('bg-primary');
         textLogo.classList.remove('text-secondary');
         textLogo.classList.add('text-primary');
+        navLink.classList.remove('text-secondary');
+        navLink.classList.add('text-light');
     }
 });
 

@@ -121,10 +121,6 @@ p>a:hover {
     font-size: 1.5rem;
 }
 
-div.text-light p>a {
-    color: $primary;
-}
-
 #home,
 #main {
     border-bottom: 1px solid $primary;
@@ -134,16 +130,7 @@ div.text-light p>a {
     padding-top: 30px;
 }
 
-#menu {
-    padding-top: 30px;
-    background-color: $primary;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-::placeholder {
+p > a {
     color: $primary;
 }
 
