@@ -8,14 +8,7 @@ $light: #efd9d0;
 @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 
 :root {
-    --burger-color: #fcb616;
-    --fries-color: #e27308;
-    --chicken-color: #8a4d4a;
-    --spag-color: #b04d36;
-    --cake-color: #562721;
-    --ice-cream-color: #3f1f12;
-    --tiramisu-color: #985e53;
-    --pie-color: #b74429;
+    --primary-color: #381100;
 }
 
 body {
@@ -134,78 +127,17 @@ p > a {
     color: $primary;
 }
 
+.carousel-inner {
+    background: url(../src/images/pngs/splash.png) no-repeat;
+    background-size: 100%;
+}
+
 // card backgrounds
 
-.burger {
-    background-color: var(--burger-color);
-    box-shadow: -10px 1px 30px var(--burger-color);
-}
-
-.burger:hover {
-    box-shadow: 1px 1px 30px var(--burger-color);
-}
-
-.fries {
-    background-color: var(--fries-color);
-    box-shadow: -10px 1px 30px var(--fries-color);
-}
-
-.fries:hover {
-    box-shadow: 1px 1px 30px var(--fries-color);
-}
-
-.chicken {
-    background-color: var(--chicken-color);
-    box-shadow: -10px 1px 30px var(--chicken-color);
-}
-
-.chicken:hover {
-    box-shadow: 1px 1px 30px var(--chicken-color);
-}
-
-.spaghetti {
-    background-color: var(--spag-color);
-    box-shadow: -10px 1px 30px var(--spag-color);
-}
-
-.spaghetti:hover {
-    box-shadow: 1px 1px 30px var(--spag-color);
-}
-
-.cake {
-    background-color: var(--cake-color);
-    box-shadow: -10px 1px 30px var(--cake-color);
-}
-
-.cake:hover {
-    box-shadow: 1px 1px 30px var(--cake-color);
-}
-
-.ice-cream {
-    background-color: var(--ice-cream-color);
-    box-shadow: -10px 1px 30px var(--ice-cream-color);
-}
-
-.ice-cream:hover {
-    box-shadow: 1px 1px 30px var(--ice-cream-color);
-}
-
-.tiramisu {
-    background-color: var(--tiramisu-color);
-    box-shadow: -10px 1px 30px var(--tiramisu-color);
-}
-
-.tiramisu:hover {
-    box-shadow: 1px 1px 30px var(--tiramisu-color);
-}
-
-.pie {
-    background-color: var(--pie-color);
-    box-shadow: -10px 1px 30px var(--pie-color);
-}
-
-.pie:hover {
-    box-shadow: 1px 1px 30px var(--pie-color);
+.primary {
+    background-color: var(--primary-color);
+    box-shadow: -10px 1px 30px var(--primary-color);
+    border: 1px solid $primary;
 }
 
 @media only screen and (max-width: 800px) {
